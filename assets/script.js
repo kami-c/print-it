@@ -83,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function() {
   	  	  	imageEnCours--
   	  	}
   	  	afficherImageEnCours()
-  	  	console.log("Clic bouton gauche - Valeur tableau image en cours :", imageEnCours.valueOf(imageEnCours), "sur", slides.length)
   	})
 
   	boutonSuivant.addEventListener("click", function() {
@@ -93,15 +92,12 @@ document.addEventListener("DOMContentLoaded", function() {
   	  	  imageEnCours++
   	  	}
   	  	afficherImageEnCours()
-  	  	console.log("Clic bouton droit - Valeur tableau image en cours:", imageEnCours.valueOf(imageEnCours), "sur", slides.length)
   	})
 
   	boutonsPuce.forEach((dot) => {
   	  	dot.addEventListener("click", function() {
   	  	  imageEnCours = parseInt(this.dataset.imageEnCours)
   	  	  afficherImageEnCours(imageEnCours)
-
-  	  	  console.log("Image n°", imageEnCours.valueOf(imageEnCours) + 1)
   	  	})
   	})
 
